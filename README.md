@@ -11,14 +11,4 @@ Lap Time Tracker: Capture and display lap times during a session.
 User-Friendly Interface: Intuitive and easy-to-use design for seamless time tracking.
 This project showcases basic web development concepts, including DOM manipulation, event handling, and dynamic content updates.
 
-How to Use:
-Clone the repository:
-git clone https://github.com/yourusername/stopwatch-app.git
-Open the index.html file in a browser.
-Start the stopwatch, track laps, or reset it whenever needed.
-Technologies Used:
-HTML: Markup for structuring the application.
-CSS: Styling for a clean, responsive layout.
-JavaScript: Core functionality for controlling the stopwatch behavior.
-Feel free to explore, modify, and use this project as a reference for building interactive time-tracking applications!
 
