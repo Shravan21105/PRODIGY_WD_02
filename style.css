@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0 ;
+  box-sizing: border-box;
+}
+
+
+
+.container {
+    width: 40%;
+    border: solid;
+    min-width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(135deg, #0d2239, #163052);
+    padding-bottom: 60px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+                rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, 
+                rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  }
+  
+
+.timer-display {
+  width: 100%;
+  background: linear-gradient(135deg, #003cff, #ff0000);
+  padding: 40px 0;
+  font-family: "Roboto" sans-serif;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  border-radius: 10px 10px 0 0;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 2px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.action {
+    width: 85%;
+    margin: 60px auto 0 auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:30px;
+}
+
+.laps{
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    font-size:34px;
+    padding-left: 35%;
+    padding-top: 15px;
+    list-style: none;
+}
+
+.action button{
+    padding: 10px 20px;
+    background-color: #fff;
+    color:#141313;
+    border:none;
+    font-weight: 600;
+    font-family: "Roboto" sans-serif;
+    font-size:18px;
+    border-radius:5px;
+    cursor:pointer;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+button:hover{
+    background-color: #01052b;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.3);
+    transform: scale(1.05);
+}
+
+.action button:active {
+    transform: scale(0.95); /* Scale down on click */
+}
+
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    .timer-display {
+        font-size: 2rem;
+    }
+
+    .action {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .laps {
+        padding-left: 30%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        width: 100%;
+    }
+
+    .timer-display {
+        font-size: 1.5rem;
+    }
+
+    .action {
+        grid-template-columns: 1fr;
+    }
+
+    .laps {
+        padding-left: 25%;
+    }
+}
